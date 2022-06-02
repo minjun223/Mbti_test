@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mbti_project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mbti_Project">
+        <activity
+            android:name=".INFJActivity"
+            android:exported="true" />
+        <activity
+            android:name=".INTJActivity"
+            android:exported="true" />
+        <activity
+            android:name=".INFPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".INTPActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ISFJActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ISFPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ISTJActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ESFJActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ESFPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ESTJActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ESTPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ENFPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ENFJActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ENTPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ISTPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ENTJActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Jp_3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Jp_2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Jp_1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Tf_3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Tf_2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Tf_1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Sn_3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Sn_2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".SN_1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Ei_3"
+            android:exported="true" />
+        <activity
+            android:name=".Ei_2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Ei_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
