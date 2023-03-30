@@ -1,6 +1,5 @@
 package com.example.mbti_select.component
 
-import com.example.mbti_select.component.ResultActivity
 import com.example.mbti_select.R
 import com.example.mbti_select.base.BaseActivity
 import com.example.mbti_select.databinding.ActivityResultBinding
@@ -10,11 +9,11 @@ class ResultActivity : BaseActivity<ActivityResultBinding>(R.layout.activity_res
     private lateinit var mbti: Array<String>
     override fun init() {
         mbti = intent.getStringArrayExtra("mbti")!!
-        chooseRamen()
+        chooseMbti()
     }
 
-    private fun chooseRamen() {
+    private fun chooseMbti() {
         val randomIndex = Random().nextInt(mbti.size)
-        binding
+        binding.mbtiName.text = mbti[randomIndex]
     }
 }

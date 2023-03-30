@@ -9,16 +9,38 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".component.ResultActivity">
+
         <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/mbti_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="MBTI"
+                android:textColor="@color/black"
+                android:textSize="60dp"
+                android:textStyle="bold" />
         </LinearLayout>
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/go_start"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/select_button"
+            android:text="@string/return_branch"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

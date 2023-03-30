@@ -12,21 +12,41 @@ class QuestionThreeActivity :  BaseActivity<ActivityQuestionThreeBinding>(R.layo
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question_three)
     }
-
+    override fun init() {
+        with(binding) {
+            question.text = intent.getStringExtra("question")
+            yesBtn.text = intent.getStringExtra("YesText")
+            noBtn.text = intent.getStringExtra("NoText")
+        }
+        onClick(intent.getStringExtra("question")!!)
+    }
     private fun onClick(question: String) {
         val resultIntent = Intent(this, ResultActivity::class.java)
         val questionFourIntent = Intent(this, QuestionFourActivity::class.java)
         with(binding) {
             yesBtn.setOnClickListener {
-
+                if (question.contains("")) {
+                    resultIntent.putExtra("", arrayOf("", ""))
+                    startActivity(resultIntent)
+                } else {
+                    resultIntent.putExtra("", arrayOf("", ""))
+                    startActivity(resultIntent)
+                }
             }
             noBtn.setOnClickListener {
-
+                if (question.contains("")) {
+                    questionFourIntent.putExtra("", "")
+                    questionFourIntent.putExtra("", "")
+                    questionFourIntent.putExtra("", "")
+                    startActivity(questionFourIntent)
+                }  else {
+                    questionFourIntent.putExtra("", "")
+                    questionFourIntent.putExtra("", "")
+                    questionFourIntent.putExtra("", "치워주라 ㅋㅋ")
+                    startActivity(questionFourIntent)
+                }
             }
         }
     }
 
-    override fun init() {
-        TODO("Not yet implemented")
-    }
 }

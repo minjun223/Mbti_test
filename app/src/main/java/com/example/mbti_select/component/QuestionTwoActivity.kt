@@ -26,10 +26,27 @@ class QuestionTwoActivity :
         val resultIntent = Intent(this, ResultActivity::class.java)
         with(binding) {
             yesBtn.setOnClickListener {
-
+                if(questionOne == "YES"){
+                    resultIntent.putExtra("mbti", arrayOf("ENTJ", "ENFP", "걍 나가서 놀아임마"))
+                    startActivity(resultIntent)
+                }else{
+                    questionThreeIntent.putExtra("question", "")
+                    questionThreeIntent.putExtra("YesText", "")
+                    questionThreeIntent.putExtra("NoText", "")
+                }
             }
             noBtn.setOnClickListener {
-
+                if (questionOne == "YES") {
+                    questionThreeIntent.putExtra("question", "")
+                    questionThreeIntent.putExtra("YesText", "")
+                    questionThreeIntent.putExtra("NoText", "")
+                    startActivity(questionThreeIntent)
+                } else {
+                    questionThreeIntent.putExtra("question", "")
+                    questionThreeIntent.putExtra("YesText", "")
+                    questionThreeIntent.putExtra("NoText", "")
+                    startActivity(questionThreeIntent)
+                }
             }
         }
     }

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">MBTI_select</string>
-
+    <string name="touch">Top to Start</string>
+    <string name="introduction">내 mbti는 COOL-T</string>
+    <string name="explane">설명</string>
+    <string name="text">앞의 질문에 답하시오</string>
+    <string name="return_branch">돌아가기</string>
 </resources>

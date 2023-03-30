@@ -24,10 +24,25 @@ class QuestionFourActivity :  BaseActivity<ActivityQuestionFourBinding>(R.layout
         val resultIntent = Intent(this, ResultActivity::class.java)
         with(binding) {
             yesBtn.setOnClickListener {
-
+                if (question.contains("")) {
+                    resultIntent.putExtra("mbti", arrayOf(" ", " ", ""))
+                    startActivity(resultIntent)
+                } else {
+                    resultIntent.putExtra(
+                        "mbti",
+                        arrayOf("")
+                    )
+                    startActivity(resultIntent)
+                }
             }
             noBtn.setOnClickListener {
-
+                if (question.contains("")) {
+                    resultIntent.putExtra("mbti", arrayOf(""))
+                    startActivity(resultIntent)
+                } else {
+                    resultIntent.putExtra("mbti", arrayOf(""))
+                    startActivity(resultIntent)
+                }
             }
         }
     }
